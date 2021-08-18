@@ -33,6 +33,37 @@ a:link {
   width: 500px;
   height: 20px;
 }
+
+button {
+    border-radius: 8px;  
+  background-color: #f8f8f8;
+  border: none;
+  color: black;
+  padding: 13px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#button-left {
+    margin: 25px 10px 10px 100px;
+}
+
+#google-logo {
+    display: flex;
+    padding: 100px 10px 10px 10px;
+    margin: auto;
+    
+    
+}
+
+.center-stuff {
+    display: flex;
+    margin: 25px auto auto auto;
+    flex: 0 1 auto;
+}
+
     </style>
     
     <body>
@@ -47,20 +78,19 @@ a:link {
                     <li><a href="#">Images</a></li>
                     <li><a href="#">Gmail</a></li>
                 </div>
-                
-                
-                
-                
-                
             </ul> 
         </header>
         <br>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         <br>
-        <input id="rcorners" type="text">
-        <button>
-            
-        </button>
+        <input class="center-stuff" id="rcorners" type="text">
+        <br>
+        <button id="button-left" type="submit">Google Search</button>
+        <button type="submit">I'm Feeling Lucky</button>
+
+        <footer>
+
+        </footer>
 
     
     </body>
