@@ -2,17 +2,24 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <title>Google</title>
     </head>
     <style>
+body {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 5px;
 }
 
 li {
     float: left;
+    
 }
 
 #right-float {
@@ -26,6 +33,10 @@ a {
 
 a:link {
   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #rcorners {
@@ -48,6 +59,13 @@ button {
     font-size: 15px;
 }
 
+.right-icons {
+    border-radius: none;
+    background-color: white;
+    margin: 2px 15px;
+    padding: 3px;
+}
+
 .button-left {
     display: flex;
     justify-content: center;
@@ -59,8 +77,8 @@ button {
     position: sticky;
     justify-content: center;
     align-items: center;
-    margin: 200px;   
-    background-color: mediumturquoise;
+    margin: 200px 10px 5px 10px;   
+    
 }
 
 .google-container > div {
@@ -83,14 +101,16 @@ button {
         <header> 
             <ul>
                 <div>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
+                    <li><a style="color: black;" href="#">About</a></li>
+                    <li><a style="color: black;" href="#">Store</a></li>
                 </div>
 
                 <div id="right-float">
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Gmail</a></li>
-                    <i class="material-icons">apps</i>
+                    <li><a style="color: black;" href="#">Gmail</a></li>
+                    <li><a style="color: black;" href="#">Images</a></li>
+                    
+
+                    <button class="right-icons"><i class="material-icons">apps</i></button>
                     <i class="material-icons">account_circle</i>
                 </div>
             </ul> 
@@ -102,7 +122,9 @@ button {
         
         <br>
         <i class="material-icons">search</i>
+
         <input class="center-stuff" id="rcorners" type="text">
+
         <div class="button-left"> 
             <button type="submit">Google Search</button>
             <button type="submit">I'm Feeling Lucky</button>
