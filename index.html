@@ -54,9 +54,19 @@ button {
     padding: 10px;
 }
 
-#google-logo {
+.google-container {
     display: flex;
-    margin: 100px auto 10px;   
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;   
+    background-color: mediumturquoise;
+}
+
+.google-container > div {
+    background-color: pink;
+    width: 100px;
+    margin: 10px;
 }
 
 .center-stuff {
@@ -86,7 +96,10 @@ button {
             </ul> 
         </header>
         <br>
-        <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <div class="google-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        
         <br>
         <i class="material-icons">search</i>
         <input class="center-stuff" id="rcorners" type="text">
