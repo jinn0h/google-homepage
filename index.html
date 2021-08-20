@@ -22,6 +22,10 @@ li {
     
 }
 
+.li-bot-adjust {
+    padding-left: 0px;
+}
+
 .right-float {
     float: right;
 }
@@ -46,6 +50,7 @@ a:hover {
   padding-left: 50px;
   width: 500px;
   height: 20px;
+  z-index: 1;
 }
 
 button {
@@ -77,8 +82,7 @@ button {
     position: sticky;
     justify-content: center;
     align-items: center;
-    margin: 200px 10px 5px 10px;   
-    
+    margin: 250px 10px 5px 10px;     
 }
 
 .google-container > div {
@@ -87,16 +91,34 @@ button {
     margin: 10px;
 }
 
-.center-stuff {
+.center-bar {
     display: flex;
-    margin: 25px auto auto auto;
-    flex: 0 1 auto;
+    justify-content: center;
+    padding: 10px;   
 }
+
+#search-icon2 {
+    display: flex;
+    
+    justify-content: center;
+    z-index: 2;
+    background-color: pink;
+}
+
+/* #search-icon { */
+    /* display: flex;
+    position: fixed;
+    left: 355px;
+    z-index: 2;
+    padding: 25px 20px 20px 20px;
+    background-color: pink; */
+/* } */
 
 footer {
     background-color: #ececec;   
-    position: absolute;
-    padding: 3px;
+    position: fixed;
+    padding: 3px 0px 10px 0px;
+    left: 0;
     bottom: 0;
     width: 100%;    
 }
@@ -121,16 +143,17 @@ footer {
                 </div>
             </ul> 
         </header>
-        <br>
+        
         <div class="google-container">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         </div>
+
+        <div class="center-bar">
+            <i id="search-icon2" style="color:rgb(119, 119, 119)" class="material-icons">search</i>
+
+        <input id="rcorners" type="text">
+        </div>
         
-        <br>
-        <i class="material-icons">search</i>
-
-        <input class="center-stuff" id="rcorners" type="text">
-
         <div class="button-left"> 
             <button type="submit">Google Search</button>
             <button type="submit">I'm Feeling Lucky</button>
@@ -139,16 +162,16 @@ footer {
 
         <footer>
             <ul>
-                <div>
-                    <li><a style="color: black;" href="#">Advertising</a></li>
-                    <li><a style="color: black;" href="#">Business</a></li>
-                    <li><a style="color: black;" href="#">How Search works</a></li>
+                <div class="li-bot-adjust">
+                    <li><a style="color: rgb(119, 119, 119);" href="#">Advertising</a></li>
+                    <li><a style="color: rgb(119, 119, 119);" href="#">Business</a></li>
+                    <li><a style="color: rgb(119, 119, 119);" href="#">How Search works</a></li>
                 </div>
 
                 <div class="right-float">
-                    <li><a style="color: black;" href="#">Privacy</a></li>
-                    <li><a style="color: black;" href="#">Terms</a></li>
-                    <li><a style="color: black;" href="#">Settings</a></li>
+                    <li><a style="color: rgb(119, 119, 119);" href="#">Privacy</a></li>
+                    <li><a style="color: rgb(119, 119, 119);" href="#">Terms</a></li>
+                    <li><a style="color: rgb(119, 119, 119);" href="#">Settings</a></li>
                 </div>
             </ul>
         </footer>
