@@ -22,7 +22,7 @@ li {
     
 }
 
-#right-float {
+.right-float {
     float: right;
 }
 
@@ -93,7 +93,13 @@ button {
     flex: 0 1 auto;
 }
 
-
+footer {
+    background-color: #ececec;   
+    position: absolute;
+    padding: 3px;
+    bottom: 0;
+    width: 100%;    
+}
 
     </style>
     
@@ -105,7 +111,7 @@ button {
                     <li><a style="color: black;" href="#">Store</a></li>
                 </div>
 
-                <div id="right-float">
+                <div class="right-float">
                     <li><a style="color: black;" href="#">Gmail</a></li>
                     <li><a style="color: black;" href="#">Images</a></li>
                     
@@ -132,7 +138,19 @@ button {
         
 
         <footer>
+            <ul>
+                <div>
+                    <li><a style="color: black;" href="#">Advertising</a></li>
+                    <li><a style="color: black;" href="#">Business</a></li>
+                    <li><a style="color: black;" href="#">How Search works</a></li>
+                </div>
 
+                <div class="right-float">
+                    <li><a style="color: black;" href="#">Privacy</a></li>
+                    <li><a style="color: black;" href="#">Terms</a></li>
+                    <li><a style="color: black;" href="#">Settings</a></li>
+                </div>
+            </ul>
         </footer>
 
     
