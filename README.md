@@ -1,5 +1,7 @@
 This is my first TOP project the google homepage!
 
+You can view the webpage [here](https://jinn0h.github.io/google-homepage/index.html)
+
 I'll be implementing what I've learned so far on the foundations of programming, starting with HTML and CSS.
 
 The project should look like the basic Google search page.
