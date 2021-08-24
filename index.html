@@ -95,11 +95,19 @@ button {
 }
 
 #search-icon2 {
-    display: flex;
-    position: absolute;
+    /* position: absolute; */
+    background: lightgreen;
+}
+
+#mic-icon {
+    /* margin: 5px; */
+    background-color: mediumaquamarine;
 }
 
 .sbox {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 10px;
     width: 245px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -107,11 +115,19 @@ button {
     padding: 4px;
 }
 
+.sbox:hover {   
+    box-shadow: 0 0 10px #cacaca;
+}
+
 .input_text_border {
     border: none;
-    width: 85%;
-    margin-left: 30px;
+    background-color: pink;
 }
+
+.input_text_border:hover {
+    border: none;
+}
+
 
 footer {
     background-color: #ececec;   
@@ -149,8 +165,11 @@ footer {
 
         <div class="center-bar">
             <div class="sbox" id="rcorners">
-                <i id="search-icon2" style="color:rgb(119, 119, 119)" class="material-icons">search</i>
+                <i id="search-icon2" style="color: #b9b9b9" class="material-icons">search</i>
+                
                 <input class="input_text_border" type="text">
+                <i id="mic-icon" style="color: #b9b9b9" class="material-icons">mic</i>
+                
             </div>    
         </div>
 
