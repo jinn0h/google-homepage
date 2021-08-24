@@ -60,6 +60,7 @@ button {
     margin: 5px;
     text-align: center;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .right-icons {
@@ -73,6 +74,10 @@ button {
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #cacaca;
 }
 
 .google-container {
@@ -94,25 +99,13 @@ button {
     padding: 10px;   
 }
 
-#search-icon2 {
-    /* position: absolute; */
-    background: lightgreen;
-}
-
-#mic-icon {
-    /* margin: 5px; */
-    background-color: mediumaquamarine;
-}
-
 .sbox {
     display: grid;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: 20px 440px 20px;
     grid-gap: 10px;
     width: 245px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     margin: 10px 5px;
-    padding: 4px;
 }
 
 .sbox:hover {   
@@ -121,13 +114,9 @@ button {
 
 .input_text_border {
     border: none;
-    background-color: pink;
+    outline: none;
+    /* background-color: pink; */
 }
-
-.input_text_border:hover {
-    border: none;
-}
-
 
 footer {
     background-color: #ececec;   
@@ -153,8 +142,8 @@ footer {
                     <li><a style="color: black;" href="#">Images</a></li>
                     
 
-                    <button class="right-icons"><i class="material-icons">apps</i></button>
-                    <i class="material-icons">account_circle</i>
+                    <li><a href="#"><i class="material-icons">apps</i></a></li>
+                    <li><a href="#"><i class="material-icons">account_circle</i></a></li>
                 </div>
             </ul> 
         </header>
@@ -169,13 +158,12 @@ footer {
                 
                 <input class="input_text_border" type="text">
                 <i id="mic-icon" style="color: #b9b9b9" class="material-icons">mic</i>
-                
             </div>    
         </div>
 
         <div class="button-left"> 
-            <button type="submit">Google Search</button>
-            <button type="submit">I'm Feeling Lucky</button>
+            <button>Google Search</button>
+            <button href="#">I'm Feeling Lucky</button>
         </div>
         
 
